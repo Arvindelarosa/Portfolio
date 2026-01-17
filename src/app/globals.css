@@ -1,0 +1,46 @@
+@layer components {
+  .glass-effect {
+    @apply bg-slate-800/20 border border-slate-700/50 backdrop-blur-md;
+  }
+
+  .glow-accent {
+    @apply shadow-glow;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-attachment: fixed;
+}
+
+/* Glassmorphism backgrounds */
+.glassmorphism {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(71, 85, 105, 0.3);
+}
+
+/* Glow animation */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
