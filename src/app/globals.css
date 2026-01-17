@@ -14,7 +14,10 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent;
+    background: linear-gradient(to right, #60a5fa, #06b6d4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
