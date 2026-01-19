@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvin M. Dela Rosa - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(148, 163, 184, 0.1);">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-decoration-none" href="#home" style="font-size: 1.5rem; background: linear-gradient(135deg, #06b6d4, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                <i class="fas fa-code me-2"></i> My Portfolio
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link smooth-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth-link" href="#reflection">Reflection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smooth-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Home -->
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center" style="background: linear-gradient(135deg, #1e3a8a 0%, #000000 100%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Profile Picture -->
+                <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+                    <div class="profile-image-wrapper mx-auto mx-lg-0" style="max-width: 450px; position: relative;">
+                        <img src="public/Portfolio.png" alt="Arvin M. Dela Rosa" class="img-fluid rounded-circle shadow-lg">
+                        <div class="glow-effect" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; background: radial-gradient(circle, rgba(6, 182, 212, 0.4) 0%, rgba(6, 182, 212, 0) 70%); z-index: -1;"></div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-6">
+                    <div class="content-wrapper text-center text-lg-start">
+                        <h1 class="display-3 fw-bold mb-3 gradient-text">
+                            Hi, I'm <span class="gradient-primary">Arvin M. Dela Rosa</span>
+                        </h1>
+                        <p class="lead text-slate-100 mb-4" style="font-size: 1.5rem; line-height: 1.6;">
+                            A passionate <span class="fw-bold text-cyan-400">full-stack developer</span> specializing in creating beautiful and functional web applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 skills-section">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5 text-center gradient-text">
+                <i class="fas fa-cogs me-3"></i>My Technical Skills
+            </h2>
+
+            <div class="row g-4">
+                <!-- Programming Languages -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card p-5 rounded-4 h-100 animate-scale-in" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%); border: 1px solid rgba(148, 163, 184, 0.2); transition: all 0.3s ease; cursor: pointer;">
+                        <h3 class="text-cyan-400 mb-4 fw-bold"><i class="fas fa-language me-2"></i>Programming Languages</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex justify-content-between align-items-center" style="color: #f1f5f9;">
+                                <span>HTML</span>
+                                <div class="progress-bar-custom" style="width: 90%;">
+                                    <div class="progress-fill" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <span>CSS</span>
+                                <div class="progress-bar-custom" style="width: 88%;">
+                                    <div class="progress-fill" style="width: 88%;"></div>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <span>JavaScript</span>
+                                <div class="progress-bar-custom" style="width: 85%;">
+                                    <div class="progress-fill" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <span>PHP</span>
+                                <div class="progress-bar-custom" style="width: 78%;">
+                                    <div class="progress-fill" style="width: 78%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card p-5 rounded-4 h-100 animate-scale-in" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%); border: 1px solid rgba(148, 163, 184, 0.2); transition: all 0.3s ease; cursor: pointer; animation-delay: 0.1s;">
+                        <h3 class="text-blue-400 mb-4 fw-bold"><i class="fas fa-cubes me-2"></i>Frameworks & Libraries</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <span>React Native</span>
+                                <div class="progress-bar-custom" style="width: 80%;">
+                                    <div class="progress-fill" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <span>React</span>
+                                <div class="progress-bar-custom" style="width: 85%;">
+                                    <div class="progress-fill" style="width: 85%;"></div>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <span>Bootstrap</span>
+                                <div class="progress-bar-custom" style="width: 90%;">
+                                    <div class="progress-fill" style="width: 90%;"></div>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <span>Tailwind CSS</span>
+                                <div class="progress-bar-custom" style="width: 92%;">
+                                    <div class="progress-fill" style="width: 92%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card p-5 rounded-4 h-100 animate-scale-in" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%); border: 1px solid rgba(148, 163, 184, 0.2); transition: all 0.3s ease; cursor: pointer; animation-delay: 0.2s;">
+                        <h3 class="text-purple-400 mb-4 fw-bold"><i class="fas fa-tools me-2"></i>Tools & Platforms</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><span class="badge badge-skill bg-cyan-600">Git & GitHub</span></li>
+                            <li class="mb-2"><span class="badge badge-skill bg-blue-600">VS Code</span></li>
+                            <li class="mb-2"><span class="badge badge-skill bg-purple-600">Vercel</span></li>
+                            <li class="mb-2"><span class="badge badge-skill bg-pink-600">REST APIs</span></li>
+                            <li class="mb-2"><span class="badge badge-skill bg-indigo-600">Responsive Design</span></li>
+                            <li class="mb-2"><span class="badge badge-skill bg-green-600">UI/UX</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 projects-section">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5 text-center gradient-text">
+                <i class="fas fa-project-diagram me-3"></i>My Projects
+            </h2>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="project-card rounded-4 overflow-hidden animate-fade-in-up" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 100%); border: 1px solid rgba(148, 163, 184, 0.2); transition: all 0.3s ease; cursor: pointer;">
+                        <div class="project-image-wrapper" style="background: linear-gradient(135deg, #06b6d4, #3b82f6); height: 250px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <i class="fas fa-volume-up" style="font-size: 4rem; color: rgba(255,255,255,0.3);"></i>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-cyan-400 mb-2 fw-bold">Ecosound</h3>
+                            <p class="text-slate-200" style="color: #e2e8f0 !important;">A project focused on environmental sound analysis and classification.</p>
+                            <div class="mb-3">
+                                <small class="text-slate-300" style="color: #cbd5e1 !important;"><strong>My Role:</strong> Developer</small>
+                                <small class="text-slate-300" style="color: #cbd5e1 !important; display: block; margin-top: 0.5rem;"><strong>Technologies:</strong> PHP, JavaScript, HTML, CSS</small>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Arvindelarosa/Ecosound-Group9-.git" class="btn btn-sm btn-outline-primary rounded-pill hover-lift">
+                                    <i class="fab fa-github me-1"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="project-card rounded-4 overflow-hidden animate-fade-in-up" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 100%); border: 1px solid rgba(148, 163, 184, 0.2); transition: all 0.3s ease; cursor: pointer; animation-delay: 0.1s;">
+                        <div class="project-image-wrapper" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); height: 250px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <i class="fas fa-ship" style="font-size: 4rem; color: rgba(255,255,255,0.3);"></i>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-blue-400 mb-2 fw-bold">Online Boat Registration</h3>
+                            <p class="text-slate-200" style="color: #e2e8f0 !important;">A web-based system for managing boat registrations online.</p>
+                            <div class="mb-3">
+                                <small class="text-slate-300" style="color: #cbd5e1 !important;"><strong>My Role:</strong> Developer</small>
+                                <small class="text-slate-300" style="color: #cbd5e1 !important; display: block; margin-top: 0.5rem;"><strong>Technologies:</strong> PHP, JavaScript, HTML, CSS</small>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Arvindelarosa/BoatRegSystem.git" class="btn btn-sm btn-outline-primary rounded-pill hover-lift">
+                                    <i class="fab fa-github me-1"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section id="reflection" class="py-5 reflection-section">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5 text-center gradient-text">
+                <i class="fas fa-lightbulb me-3"></i>My Reflection
+            </h2>
+
+            <div class="row g-4">
+                <!-- Question 1 -->
+                <div class="col-lg-6">
+                    <div class="reflection-card p-5 rounded-4 h-100 animate-fade-in-up" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%); border-left: 4px solid #06b6d4; border-radius: 1rem;">
+                        <h3 class="text-cyan-400 mb-3 fw-bold">
+                            <i class="fas fa-question-circle me-2"></i>Q1: What technologies did you use and why?
+                        </h3>
+                        <p class="text-slate-200" style="color: #e2e8f0 !important;">
+                            I primarily used React for component-based UI development, Tailwind CSS and Bootstrap for responsive styling, 
+                            and PHP for backend logic. React provides excellent reusability through components, while Tailwind's utility-first 
+                            approach allows rapid prototyping. PHP handles server-side operations efficiently. This stack ensures scalability 
+                            and maintainability across the full application.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="col-lg-6">
+                    <div class="reflection-card p-5 rounded-4 h-100 animate-fade-in-up" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%); border-left: 4px solid #3b82f6; animation-delay: 0.05s;">
+                        <h3 class="text-blue-400 mb-3 fw-bold">
+                            <i class="fas fa-question-circle me-2"></i>Q2: Which parts were easiest for you?
+                        </h3>
+                        <p class="text-slate-200" style="color: #e2e8f0 !important;">
+                            Creating responsive layouts was relatively straightforward using Tailwind CSS and Bootstrap. 
+                            The utility-first approach made styling intuitive. Additionally, building interactive components with JavaScript 
+                            felt natural once I understood the DOM manipulation concepts. I enjoyed working on the UI/UX aspects most.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="col-lg-6">
+                    <div class="reflection-card p-5 rounded-4 h-100 animate-fade-in-up" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%); border-left: 4px solid #8b5cf6; animation-delay: 0.1s;">
+                        <h3 class="text-purple-400 mb-3 fw-bold">
+                            <i class="fas fa-question-circle me-2"></i>Q3: Which parts were most challenging?
+                        </h3>
+                        <p class="text-slate-200" style="color: #e2e8f0 !important;">
+                            Managing state across components and implementing complex backend logic with PHP proved challenging. 
+                            Understanding asynchronous operations and proper error handling took time. Additionally, ensuring cross-browser 
+                            compatibility and optimizing performance required careful testing. Integrating the frontend and backend seamlessly 
+                            was a learning curve.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="col-lg-6">
+                    <div class="reflection-card p-5 rounded-4 h-100 animate-fade-in-up" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%); border-left: 4px solid #ec4899; animation-delay: 0.15s;">
+                        <h3 class="text-pink-400 mb-3 fw-bold">
+                            <i class="fas fa-question-circle me-2"></i>Q4: What technologies are you interested in learning?
+                        </h3>
+                        <p class="text-slate-200" style="color: #e2e8f0 !important;">
+                            I'm eager to explore Next.js for better server-side rendering, TypeScript for type safety, and advanced backend 
+                            frameworks like Laravel. I'm also interested in learning databases like MongoDB and PostgreSQL for more robust data 
+                            management. Docker and cloud deployment strategies are on my learning roadmap too.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="col-lg-12">
+                    <div class="reflection-card p-5 rounded-4 h-100 animate-fade-in-up" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%); border-left: 4px solid #22c55e; animation-delay: 0.2s;">
+                        <h3 class="text-green-400 mb-3 fw-bold">
+                            <i class="fas fa-question-circle me-2"></i>Q5: What kind of applications do you want to build in the future?
+                        </h3>
+                        <p class="text-slate-200" style="color: #e2e8f0 !important;">
+                            I aspire to build meaningful applications that solve real-world problems. My interests include SaaS platforms for 
+                            business automation, AI-powered analytics dashboards, mobile-first applications for emerging markets, and 
+                            progressive web apps (PWAs). I'm particularly interested in projects that combine frontend excellence with 
+                            scalable backend infrastructure. Long-term, I'd love to create products that impact millions of users while 
+                            maintaining clean, maintainable code and excellent user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 contact-section">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5 text-center gradient-text">
+                <i class="fas fa-envelope me-3"></i>Get In Touch
+            </h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-card p-5 rounded-4" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%); border: 1px solid rgba(148, 163, 184, 0.2);">
+                        <p class="text-slate-200 mb-5 text-center" style="color: #e2e8f0 !important;">I'm open to exciting opportunities and would love to hear from you!</p>
+                        
+                        <div class="row g-4 text-center">
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope text-cyan-400 mb-3" style="font-size: 2rem;"></i>
+                                    <h5 class="fw-bold mb-2" style="color: #f1f5f9;">Email</h5>
+                                    <p class="text-slate-200" style="color: #e2e8f0 !important;"><a href="mailto:arvinadelarosa@gmail.com" class="text-decoration-none text-cyan-400 hover-text">arvinadelarosa@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <i class="fab fa-github text-blue-400 mb-3" style="font-size: 2rem;"></i>
+                                    <h5 class="fw-bold mb-2" style="color: #f1f5f9;">GitHub</h5>
+                                    <p class="text-slate-200" style="color: #e2e8f0 !important;"><a href="https://github.com/Arvindelarosa" class="text-decoration-none text-blue-400 hover-text">github.com/Arvindelarosa</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <i class="fab fa-facebook text-purple-400 mb-3" style="font-size: 2rem;"></i>
+                                    <h5 class="fw-bold mb-2" style="color: #f1f5f9;">Facebook</h5>
+                                    <p class="text-slate-200" style="color: #e2e8f0 !important;"><a href="https://web.facebook.com/arvin.delarosa.338" class="text-decoration-none text-purple-400 hover-text">facebook.com/arvin.delarosa.338</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr style="border-color: rgba(148, 163, 184, 0.2);" class="my-5">
+
+                        <form onsubmit="handleFormSubmit(event)" class="contact-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control form-control-custom rounded-3" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control form-control-custom rounded-3" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control form-control-custom rounded-3" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom-primary btn-lg rounded-pill w-100 fw-bold hover-lift">
+                                Send Message <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%); border-top: 1px solid rgba(148, 163, 184, 0.1);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-slate-300 mb-0" style="color: #cbd5e1 !important;">&copy; 2024 Arvin M. Dela Rosa. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="https://github.com/Arvindelarosa" class="text-decoration-none text-slate-300 hover:text-cyan-400 transition-all" style="color: #cbd5e1 !important;">
+                        <i class="fab fa-github" style="font-size: 1.5rem;"></i>
+                    </a>
+                    <a href="https://web.facebook.com/arvin.delarosa.338" class="text-decoration-none text-slate-300 hover:text-cyan-400 transition-all" style="color: #cbd5e1 !important;">
+                        <i class="fab fa-facebook" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
